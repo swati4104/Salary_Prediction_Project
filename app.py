@@ -92,13 +92,13 @@ def main():
 
             st.success("Prediction Complete!")
             st.metric(
-                label="Predicted Salary (USD)",
-                value=f"${predicted_salary:,.2f}"
+                label="Predicted Salary (Ruppes)",
+                value=f"₹{predicted_salary:,.1d}"
             )
 
             st.balloons()
             st.markdown(f"""
-                <p style='font-size:14px; color: grey;'>
+                <p style='font-size:14px; color: marron;'>
                     *Prediction based on: {experience} years of experience, Education Level {education_level} ({education_level_display.split(' - ')[1]}), and Age {age}.
                 </p>
             """, unsafe_allow_html=True)
