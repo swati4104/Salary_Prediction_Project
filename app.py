@@ -93,7 +93,7 @@ def main():
             st.success("Prediction Complete!")
             st.metric(
                 label="Predicted Salary (Ruppes)",
-                value=f"₹{predicted_salary:,.1d}"
+                value=f"₹{predicted_salary:,.1f}"
             )
 
             st.balloons()
